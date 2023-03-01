@@ -12,8 +12,8 @@ def print_console():
 
 with DAG(
         dag_id=dag_id,
-        # start_date=datetime(2022, 4, 10),
-        start_date=datetime.strptime(datetime.now(), '%Y-%m-%d'),
+        start_date=datetime(2023, 2, 28),
+        #start_date=datetime.strptime(datetime.now(), '%Y-%m-%d'),
         schedule_interval="0 5 * * *",
         max_active_runs=1,
         tags=["test"]
